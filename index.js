@@ -32,7 +32,6 @@ const questions = [
     }
 },
 { 
-    // CURRENT EDIT HERE
     type: 'input',
     name: 'email',
     message: 'What is your email address?',

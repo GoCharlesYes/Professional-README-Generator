@@ -1,6 +1,22 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderContributingSection(confirmContributers, data) {
+  if (!confirmContributers) {
+    return `I appreciate your interest in this project; however, I am not currently accepting any contributions from third parties.`;
+  } else {
+    return `${data}`;
+  }
+}
+
+// If there is no license, return an empty string; functions also returns certain badge based on what license is chosen
+function renderLicenseBadge(license) { 
+  if (license !== 'no license') {
+    return `
+  ![badge](https://img.shields.io/badge/license-${license}-blue)
+    `;
+  } else {
+    return ' ';
+  }
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
