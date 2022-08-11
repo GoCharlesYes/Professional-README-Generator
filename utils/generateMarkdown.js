@@ -94,6 +94,6 @@ function generateMarkdown(data) {
   [GitHub](https://github.com/${data.githubUsername})
   [Email: ${data.email}](mailto:${data.email})
 `;
-}
+};
 
 module.exports = generateMarkdown;
